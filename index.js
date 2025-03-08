@@ -1,4 +1,5 @@
-
+const { onRequest } = require("firebase-functions/v2/https");
+const logger = require("firebase-functions/logger");
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
@@ -40,3 +41,4 @@ app.listen(5000, (err)=>{
     console.log("Amazon Server on PORT: 5000, http://localhost:5000")
 })
 
+exports.api = onRequest(app);
