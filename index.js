@@ -40,4 +40,4 @@ app.listen(5000, (err)=>{
     console.log("Amazon Server on PORT: 5000, http://localhost:5000")
 })
 
-exports.api = onRequest(app);
+
